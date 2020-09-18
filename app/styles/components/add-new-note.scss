@@ -1,0 +1,18 @@
+.add-new-note {
+  display: flex;
+  align-items: center;
+  background-color: $green-main;
+  border-radius: 15px;
+  color: $white-main;
+  line-height: 32px;
+  padding: 0 15px;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  .add-new-note__icon {
+    margin-right: 10px;
+  }
+}

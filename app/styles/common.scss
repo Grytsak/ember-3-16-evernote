@@ -1,0 +1,25 @@
+// HTML Tags
+html body * {
+  font-family: $font-family-main;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+// HTML Tags end
+
+// App
+.app-container {
+  display: flex;
+}
+// App end

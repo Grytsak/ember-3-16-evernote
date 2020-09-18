@@ -1,0 +1,30 @@
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background-color: $black-main;
+  padding: 20px 0;
+}
+
+.sidebar__add-btn-container {
+  margin-bottom: 20px;
+  padding: 7px 15px;
+}
+
+.sidebar__list-item {
+  color: $gray-main;
+  cursor: pointer;
+  font-family: $font-family-main;
+  padding: 7px 15px;
+  transition: background-color 0.2s;
+}
+
+.sidebar__list-item:hover {
+  background-color: $gray-dark;
+}
+
+.sidebar__link {
+  display: block;
+  width: 100%;
+  color: $gray-main;
+  font-family: $font-family-main;
+}

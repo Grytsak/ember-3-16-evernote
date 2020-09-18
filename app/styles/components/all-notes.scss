@@ -1,0 +1,27 @@
+.notes-block {
+  width: 400px;
+  background-color: $gray-super-light;
+  border-right: 1px solid $gray-very-ligh;
+}
+
+.notes-block__top {
+  border-bottom: 1px solid $gray-very-ligh;
+  padding: 20px;
+  background-color: $gray-super-light;
+}
+
+.notes-block__main-title {
+  color: $black-main;
+  font-size: $font-size-large;
+  margin-bottom: 25px;
+}
+
+.notes-block__meta-text {
+  color: $gray-medium-dark;
+  font-size: $font-size-very-small;
+}
+
+.notes-block__notes-container {
+  height: calc(100vh - 98px);
+  overflow: auto;
+}

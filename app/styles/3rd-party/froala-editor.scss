@@ -1,0 +1,22 @@
+.fr-box {
+  width: 100%;
+}
+
+.fr-toolbar, .second-toolbar {
+  border: none;
+}
+
+.fr-box.fr-basic .fr-wrapper {
+  height: calc(100vh - 89px);
+  border-right: none;
+  border-left: none;
+  overflow: auto;
+}
+
+.fr-box.fr-basic.fr-toolbar-open .fr-wrapper {
+  height: calc(100vh - 137px);
+}
+
+.fr-toolbar .fr-newline {
+  margin: 0;
+}
