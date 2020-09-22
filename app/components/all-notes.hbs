@@ -2,18 +2,11 @@
   <div class="notes-block__top">
     <h2 class="notes-block__main-title">All Notes</h2>
     <p class="notes-block__meta-text">20 notes</p>
-  </div>
+</div>
 
   <div class="notes-block__notes-container">
-    <div class="block-note">
-      <h3 class="block-note__title">Block title</h3>
-      <p class="block-note__description">Block description</p>
-      <p class="block-note__meta">Sep 5, 2019</p>
-    </div>
-    <div class="block-note">
-      <h3 class="block-note__title">Block title</h3>
-      <p class="block-note__description">Block description</p>
-      <p class="block-note__meta">Sep 5, 2019</p>
-    </div>
+    {{#each @notes as |note|}}
+      <Note @note={{note}} />
+    {{/each}}
   </div>
 </div>

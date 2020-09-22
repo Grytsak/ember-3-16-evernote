@@ -1,7 +1,13 @@
 .block-note {
   background-color: $gray-super-light;
   border-bottom: 1px solid $gray-very-ligh;
+  cursor: pointer;
   padding: 20px;
+  transition: background-color 0.2s;
+}
+
+.block-note:hover {
+  background-color: $white-main;
 }
 
 .block-note__title {
