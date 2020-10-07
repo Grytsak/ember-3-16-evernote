@@ -6,6 +6,14 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    firebase: {
+      apiKey: "AIzaSyDZ83vk0QSaCvjKKXZLCHaik_LVP6rJYYk",
+      authDomain: "ember-3-16-evernote.firebaseapp.com",
+      databaseURL: "https://ember-3-16-evernote.firebaseio.com",
+      projectId: "ember-3-16-evernote",
+      storageBucket: "ember-3-16-evernote.appspot.com",
+      messagingSenderId: "202598155720",
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

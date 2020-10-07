@@ -10,6 +10,11 @@
   background-color: $white-main;
 }
 
+.block-note--selected {
+  background-color: $white-main;
+  border: 1px solid $green-main;
+}
+
 .block-note__title {
   color: $black-main;
   font-size: $font-size-small;
@@ -26,3 +31,4 @@
   color: $gray-medium-dark;
   font-size: $font-size-very-small;
 }
+

@@ -1,5 +1,7 @@
   <Input 
-  @type="text" 
-  placeholder="Note title" 
-  class="note-title-input"
+    @type="text" 
+    placeholder="Note title" 
+    class="note-title-input"
+    @value={{this.note.selectedNote.title}}
+    @key-up={{this.editNoteTitle}}
   />
