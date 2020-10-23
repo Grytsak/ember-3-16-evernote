@@ -1,0 +1,6 @@
+<FroalaEditor
+  @content={{html-safe-string this.note.selectedNote.description}}
+  @update={{fn (mut this.note.selectedNote.description)}}
+  @updateEvent="keyup"
+  @on-keyup={{this.editNoteDescription}} 
+/>

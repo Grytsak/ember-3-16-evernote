@@ -1,5 +1,5 @@
 <div class="block-note {{if @note.selected "block-note--selected"}}" {{on "click" this.selectNote}}>
       <h3 class="block-note__title">{{@note.title}}</h3>
-      <p class="block-note__description">{{@note.description}}</p>
+      <p class="block-note__description">{{html-tags-strip @note.description limit=25}}</p>
       <p class="block-note__meta">{{@note.createdAt}}</p>
 </div>

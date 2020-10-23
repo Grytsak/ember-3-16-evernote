@@ -16,6 +16,20 @@
   margin-bottom: 25px;
 }
 
+.notes-block__bottom-container {
+  display: flex;
+}
+
+.notes-block__sort {
+  margin-left: auto;
+}
+
+.notes-block__sort p {
+  color: $gray-medium-dark;
+  cursor: pointer;
+  font-size: $font-size-very-small;
+}
+
 .notes-block__meta-text {
   color: $gray-medium-dark;
   font-size: $font-size-very-small;

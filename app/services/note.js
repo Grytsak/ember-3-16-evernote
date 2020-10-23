@@ -13,4 +13,22 @@ export default class NoteService extends Service {
   }
 
   @tracked selectedNote;
+
+  get notesSortType() {
+    let noteSettings = this.store.peekAll('note-settings');
+    let noteSettingsRecord;
+
+    if(noteSettings.length === 0) {
+      let noteSettingsRecord = this.store.createRecord('note-settings');
+      noteSettingsRecord.save();
+    } else {
+      noteSettings.forEach(record => {
+        noteSettingsRecord = record;
+      });
+    } 
+
+    if (noteSettingsRecord) {
+      return noteSettingsRecord;
+    }
+  }
 }

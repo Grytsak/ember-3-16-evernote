@@ -2,13 +2,13 @@ import Component from '@glimmer/component';
 import { inject as service } from '@ember/service';
 import { action } from '@ember/object';
 
-export default class NoteTitleInputComponent extends Component {
+export default class NoteEditorComponent extends Component {
   @service store;
   @service note;
 
   userFinishedTyping = null;
 
-  @action editNoteTitle() {
+  @action editNoteDescription() {
     clearTimeout(this.userFinishedTyping);
 
     this.userFinishedTyping = setTimeout(() => {

@@ -7,8 +7,8 @@ export default class NoteModel extends Model {
   @attr("string", {
     defaultValue() { return "No description" }
   }) description;
-  @attr('date', {
-    defaultValue() { return new Date(); }
+  @attr('string', {
+    defaultValue() { return new Date(Date.now()).toLocaleString(); }
   }) createdAt;
   @attr("boolean", {
     defaultValue() { return false }
