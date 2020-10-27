@@ -9,19 +9,32 @@ export default class AllNotesComponent extends Component {
   @service store;
   @service note;
 
-  @tracked notes = this.store.peekAll('note');
-  @tracked notesSortType;
+  constructor() {
+    super(...arguments);
 
+    let allNotesSortType = this.note.notesSortType.allNotesSortType;
 
-  notesSorting = ['title'];
-  @sort('notes', 'notesSorting') sortedNotes;
-
-  get notesSortedByTitle() {
-    return this.notes.sortBy('title');
+    switch(allNotesSortType) {
+      case 'title':
+        this.notes = this.store.peekAll('note').sortBy('title');
+        break;
+    }
   }
 
+  @tracked notes = this.store.peekAll('note');
+
   @action sortTitle() {
-   console.log('record:', this.note.notesSortType);
+    let noteSettings = this.note.notesSortType;
+    noteSettings.allNotesSortType = 'title';
+    noteSettings.save();
+    this.notes = this.notes.sortBy('title');
+  }
+
+  @action sortDateCreated() {
+    let noteSettings = this.note.notesSortType;
+    noteSettings.allNotesSortType = 'dateCreated';
+    noteSettings.save();
+    this.notes =  this.notes.sortBy('createdAt').reverse();
   }
 
   get noteOrNotes() {

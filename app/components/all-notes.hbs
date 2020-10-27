@@ -5,7 +5,7 @@
       <p class="notes-block__meta-text">{{@notes.length}} {{this.noteOrNotes}}</p>
       <div class="notes-block__sort">
         <p {{on 'click' this.sortTitle}}>Title</p>
-        <p>Date created</p>
+        <p {{on 'click' this.sortDateCreated}}>Date created</p>
       </div>
     </div>
 </div>
